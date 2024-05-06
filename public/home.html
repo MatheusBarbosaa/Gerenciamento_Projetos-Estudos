@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <style>
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-item:last-child {
+    margin-bottom: 0;
+}
+
+.task-item input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.task-item button {
+    background-color: #ff4b5a;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    background-color: #d83f4b;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Suas Tarefas</h2>
+            <ul id="task-list">
+                <!-- As tarefas serão listadas aqui -->
+            </ul>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Adicionar nova tarefa" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Gerenciador de Tarefas</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
